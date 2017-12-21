@@ -70,6 +70,19 @@ img{
 	height: 150px;
 }
 
+.fundoForm{
+	background-color: white;
+	margin-right: 35%;
+	margin-left: 35%;
+}
+
+.btnTamanho{
+	width: 80%;
+	padding: 50%;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
 .fontSlider{
 	float: left;
 	z-index: 10;
