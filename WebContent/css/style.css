@@ -1,0 +1,83 @@
+*{
+	margin: 0;/*Sem margem*/
+	padding: 0;/*Sem espaçamento*/
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;/*Tamanho real da fonte*/
+	font-weight: normal;/*Peso ou intensidade da fonte normal*/
+	box-sizing: border-box;/*Tamanho da caixa agr nao conta com a borda*/
+	border: none;/*Sem borda*/
+	outline: none;/*Sem contorno*/
+}
+
+img{
+	max-width: 100%;/*Imagens vai ter o tamanho real*/
+}
+
+.header{
+	width: 100%;/*Ocupa 100% do espaço*/
+	float: left;/*Flutua na esquerda*/
+	padding: 10px 2%;/*Espaçamento altura/largura*/
+	background-color: white;/*Cor do fundo*/
+}
+
+.logo{
+	width: 256px;
+	height: 75px;
+	float: left;
+	background: url(../img/logo.png) center center/250px no-repeat;
+	font-size: 0;
+}
+
+.hoverDan:hover{
+	background-color:rgba(0,0,0,0.1);
+	color: red;
+}
+
+.slider1{
+	background: url(../img/slider1.jpg) center center/1365px no-repeat;
+}
+
+.slider2{
+	background: url(../img/slider2.jpg) center center/1365px no-repeat;
+}
+
+.slider3{
+	background: url(../img/slider3.jpg) center center/1365px no-repeat;
+}
+
+.slider4{
+	background: url(../img/slider4.jpg) center center/1365px no-repeat;
+}
+
+.slider5{
+	background: url(../img/slider5.jpg) center center/1365px no-repeat;
+}
+
+.mainDan{
+	background-color: rgba(0,0,0,0.1);
+	padding: 20px 5%;
+}
+
+.borderDiv{  
+  border-top-left-radius: 10em;
+  border-bottom-right-radius: 5em;
+  border-bottom-left-radius: 2em;
+}
+
+.fundoDiv{
+	background-color: white;
+	padding: 2%;
+	height: 150px;
+}
+
+.fontSlider{
+	float: left;
+	z-index: 10;
+	padding-left: 1%;
+	position: absolute;
+	color: white;
+	text-shadow: black 0.1em 0.1em 0.9em;
+	font-weight: lighter;
+}
+
+
