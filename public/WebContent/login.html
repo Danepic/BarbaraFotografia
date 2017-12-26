@@ -1,112 +1,188 @@
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <meta name="keywords" content="Foto, Fotografia, Eventos, Fotógrafa, Fotógrafo, Fotos">
-      <meta name="author" content="Danilo Mendes">
-      <title>Bárbara Alves - Fotografia</title>
-      <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-      
-      <!-- Firebase Scripts CDN -->
-      <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-messaging.js"></script>
-      
-      <!-- Estilos CSS -->
-      <link type="text/css" rel="stylesheet" href="css/style.css"/>
-	    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100"> 
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<!DOCTYPE html>
+<html>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Foto, Fotografia, Eventos, Fotógrafa, Fotógrafo, Fotos">
+  <meta name="author" content="Danilo Mendes">
+  <title>Bárbara Alves - Fotografia</title>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 
-	<!-- Menu -->
-    <body>
-      <header class="cabecalho">
-        <nav class="white lighten-4">
-          <a href="index.html"><span class="logo">ICONE</span></a>
-            <div class="nav-wrapper">
-              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li class="active"><a href="index.html" class="hoverDan black-text text-darken-5 ">HOME</a></li>
-                <li><a href="portfolio.html" class="hoverDan black-text text-darken-5">PORTFÓLIO</a></li>
-                <li><a href="sobre.html" class="hoverDan black-text text-darken-5">SOBRE</a></li>
-                <li><a href="contato.html" class="hoverDan black-text text-darken-5">CONTATO</a></li>
-              </ul> 
+  <!-- Firebase Scripts CDN -->
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-messaging.js"></script>
+
+  <!-- Estilos CSS -->
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<!-- Menu -->
+
+<body>
+  <header class="cabecalho">
+    <nav class="white lighten-4">
+      <a href="index.html">
+        <span class="logo">ICONE</span>
+      </a>
+      <div class="nav-wrapper">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a href="../" class="hoverDan black-text text-darken-5 ">HOME</a>
+          </li>
+          <li>
+            <a href="portfolio.html" class="hoverDan black-text text-darken-5">PORTFÓLIO</a>
+          </li>
+          <li>
+            <a href="sobre.html" class="hoverDan black-text text-darken-5">SOBRE</a>
+          </li>
+          <li>
+            <a href="contato.html" class="hoverDan black-text text-darken-5">CONTATO</a>
+          </li>
+          <li class="active">
+            <a href="login.html" class="hoverDan black-text text-darken-5 ">
+              <i class="fa fa-sign-in"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Menu -->
+
+
+
+  <!-- Main -->
+  <main class="mainDan z-depth-1 ">
+    <div class="fundoForm">
+
+      <p>&nbsp</p>
+
+      <div id="formDefaultSocial">
+        <a class="waves-effect waves-light btn light-blue darken-4 btnTamanho">
+          <i class="fa fa-facebook"></i>&nbsp&nbsp&nbspLogar com Facebook</a>
+        <p>&nbsp</p>
+        <a class="waves-effect waves-light btn red accent-2 btnTamanho">
+          <i class="fa fa-google "></i>&nbsp&nbsp&nbspLogar com Gmail</a>
+        <p>&nbsp</p>
+        <p style="text-align: center">Ou</p>
+      </div>
+
+
+
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" id="email" class="validate">
+              <label for="email">Email</label>
             </div>
-        </nav>
-      </header>
-      <!-- Menu -->
-      
-
-      
-      <!-- Main -->
-      <main class="mainDan z-depth-1 ">
-      	<div class="fundoForm">
-      	
-      		<a class="waves-effect waves-light btn light-blue darken-4 btnTamanho"><i class="fa fa-facebook"></i>&nbsp&nbsp&nbspLogar com Facebook</a>
-      		<a class="waves-effect waves-light btn red accent-2 btnTamanho"><i class="fa fa-google "></i>&nbsp&nbsp&nbspLogar com Gmail</a>
-      	
-      		<div class="row">
-			  <form class="col s12">
-				<div class="row">
-					<div class="input-field col s6">
-				          <input id="email" type="email" class="validate">
-          				  <label for="email">Email</label>
-       				</div>
-				</div>
-				<div class="row">
-        			<div class="input-field col s6">
-          				<input id="password" type="password" class="validate">
-          				<label for="password">Password</label>
-        			</div>
-      			</div>
-			  </form>
-			</div>
-      	</div>
-	  </main>
-	  <!-- Main -->
-      
-      <!-- Rodapé -->
-      <footer class="white lighten-4 page-footer z-depth-1 ">
-        <div>
-          <div class="container ">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="black-text">Fale comigo!</h5>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <ul>
-                  <li><a class="black-text text-lighten-5" href="#!">&nbsp</a></li>
-                  <li><a class="black-text text-lighten-5" href="https://www.instagram.com/balves._/">Siga-me no Instagram&nbsp<i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
-                  <li><a class="black-text text-lighten-5" href="https://api.whatsapp.com/send?phone=5511968053478">TEL: (11)96805-3478&nbsp<i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></a></li>
-                </ul>
-              </div>
+            <div class="input-field col s12">
+              <input id="password" type="password" id="password" class="validate">
+              <label for="password">Senha</label>
             </div>
-           </div>
+            <div id="formDefaultButtons">
+              <button class="btn waves-effect waves-light grey darken-3 btnSubmit" type="button" id="login" name="login">Logar
+                <i class="material-icons right">send</i>
+              </button>
+              <button class="btn waves-effect waves-light grey darken-3 btnSubmit" type="button" id="register" name="register">Cadastro
+                <i class="material-icons right">person_add</i>
+              </button>
+            </div>
           </div>
-          <div class="footer-copyright" >
-            <div class="container black-text text-lighten-5 ">
-            © 2017 Copyright Bárbaralves
-            <a class="black-text text-lighten-5 right" href="#!">Made by Danepic</a>
+
+
+
+
+
+          <!-- Formulário de cadastro -->
+          <div id="formCadastro" class="disableForm">
+            <div class="input-field col s12">
+              <input id="password-confirm" type="password" id="password-confirm" class="validate">
+              <label for="password-confirm">Confirmação de Senha</label>
             </div>
+            <div class="input-field col s12">
+              <select id="objetivo">
+                <option value="" disabled selected>Escolha uma opção</option>
+                <option value="1">Eventos</option>
+                <option value="2">Ensaios</option>
+                <option value="3">Outros</option>
+              </select>
+              <label>Objetivo</label>
+            </div>
+            <button class="btn waves-effect waves-light grey darken-3 btnSubmit" type="button" id="voltar" name="register">Voltar
+              <i class="material-icons right">arrow_back</i>
+            </button>
+            <button class="btn waves-effect waves-light grey darken-3 btnSubmit" type="button" id="btn-registrar" name="login">Registrar
+              <i class="material-icons right">add</i>
+            </button>
           </div>
-        </footer>
-        <!-- Rodapé -->
-        
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <!--Scripts-->
-      <script type="text/javascript">
-        $('.carousel.carousel-slider').carousel({fullWidth: true});
-      </script>
-    </body>
-  </html>
-  
-  
+        </form>
+      </div>
+    </div>
+  </main>
+  <!-- Main -->
+
+  <!-- Rodapé -->
+  <footer class="white lighten-4 page-footer z-depth-1 ">
+    <div>
+      <div class="container ">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="black-text">Fale comigo!</h5>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <ul>
+              <li>
+                <a class="black-text text-lighten-5" href="#!">&nbsp</a>
+              </li>
+              <li>
+                <a class="black-text text-lighten-5" href="https://www.instagram.com/balves._/">Siga-me no Instagram&nbsp
+                  <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a class="black-text text-lighten-5" href="https://api.whatsapp.com/send?phone=5511968053478">TEL: (11)96805-3478&nbsp
+                  <i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container black-text text-lighten-5 ">
+        © 2017 Copyright Bárbaralves
+        <a class="black-text text-lighten-5 right" href="#!">Made by Danepic</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Rodapé -->
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!--Scripts Materialize prontos-->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('select').material_select();
+    });
+
+  </script>
+  <!--Script próprio-->
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>

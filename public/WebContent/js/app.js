@@ -8,21 +8,69 @@
     messagingSenderId: "2313726941"
   };
   firebase.initializeApp(config);
-  
-  // FirebaseUI config.
-  var uiConfig = {
-    signInSuccessUrl: 'dashboard.htlm',
-    signInOptions: [
-      // Leave the lines as is for the providers you want to offer your users.
-      firebase.auth.EmailAuthProvider.PROVIDER_ID,
-      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-      firebase.auth.FacebookAuthProvider.PROVIDER_ID
-    ],
-    // Terms of service url.
-    tosUrl: '<your-tos-url>'
-  };
 
-  // Initialize the FirebaseUI Widget using Firebase.
-  var ui = new firebaseui.auth.AuthUI(firebase.auth());
-  // The start method will wait until the DOM is loaded.
-  ui.start('#firebaseui-auth-container', uiConfig);
+  //Get elements txt
+  const txtEmail = document.getElementById('email');
+  const txtPassword = document.getElementById('password');
+  const txtPasswordConfirm = document.getElementById('password-confirm');
+  const txtObjetivo = document.getElementById('objetivo');
+
+  //Get elements btn
+  const btnLogin = document.getElementById('login');
+  const btnRegister = document.getElementById('register');
+  const btnFacebook = document.getElementById('facebbok');
+  const btnGmail = document.getElementById('gmail');
+  const btnVoltar = document.getElementById('voltar');
+  const btnRegistrar = document.getElementById('btn-registrar');
+
+  //Get elements forms
+  const formDefaultSocial = document.getElementById('formDefaultSocial');
+  const formDefaultButtons = document.getElementById('formDefaultButtons');
+  const formCadastro = document.getElementById('formCadastro');
+
+  //Add login event
+  btnLogin.addEventListener('click', e => {
+    //Get email and pass
+    const email = txtEmail.value;
+    const pass = txtPassword.value;
+    const auth = firebase.auth();
+
+    //Sign in
+    const promise = auth.signInWithEmailAndPassword(email, pass);
+    promise.catch(e => console.log(e.message));
+  });
+
+  //Add register event
+  btnRegister.addEventListener('click', e => {
+    //Delete components
+    formDefaultSocial.classList.add("disableForm");
+    formDefaultButtons.classList.add("disableForm");
+    formCadastro.classList.remove("disableForm");
+
+    //Get email and pass
+    const email = txtEmail.value;
+    const pass = txtPassword.value;
+    const auth = firebase.auth();
+
+    //Sign in
+    //const promise = auth.signInWithEmailAndPassword(email, pass);
+    //promise.catch(e => console.log(e.message));
+  });
+
+  //Add voltar event
+  btnVoltar.addEventListener('click', e => {
+    console.log("teste");
+    //Delete components
+    formDefaultSocial.classList.remove("disableForm");
+    formDefaultButtons.classList.remove("disableForm");
+    formCadastro.classList.add("disableForm");
+
+    //Get email and pass
+    const email = txtEmail.value;
+    const pass = txtPassword.value;
+    const auth = firebase.auth();
+
+    //Sign in
+    //const promise = auth.signInWithEmailAndPassword(email, pass);
+    //promise.catch(e => console.log(e.message));
+  });
