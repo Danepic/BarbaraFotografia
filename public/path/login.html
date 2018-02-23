@@ -39,7 +39,7 @@
       <div class="nav-wrapper">
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
-            <a href="../" class="hoverDan black-text text-darken-5 ">HOME</a>
+            <a href="../index.html" class="hoverDan black-text text-darken-5 ">HOME</a>
           </li>
           <li>
             <a href="portfolio.html" class="hoverDan black-text text-darken-5">PORTFÓLIO</a>
@@ -61,81 +61,84 @@
   </header>
   <!-- Menu -->
 
+  <div class="mainLogin z-depth-1">
+
+    <!-- Main -->
+    <main class="mainDan z-depth-1">
+      <div class="fundoForm">
+
+        <div id="formDefaultSocial">
+
+          <p>&nbsp</p>
+
+          <a class="waves-effect waves-light btn light-blue darken-4 btnTamanho">
+            <i class="fa fa-facebook"></i>&nbsp&nbsp&nbspLogar com Facebook</a>
+          <p>&nbsp</p>
+          <a class="waves-effect waves-light btn red accent-2 btnTamanho">
+            <i class="fa fa-google "></i>&nbsp&nbsp&nbspLogar com Gmail</a>
+          <p>&nbsp</p>
+          <p style="text-align: center">Ou</p>
+        </div>
 
 
-  <!-- Main -->
-  <main class="mainDan z-depth-1 ">
-    <div class="fundoForm">
 
-      <p>&nbsp</p>
-
-      <div id="formDefaultSocial">
-        <a class="waves-effect waves-light btn light-blue darken-4 btnTamanho">
-          <i class="fa fa-facebook"></i>&nbsp&nbsp&nbspLogar com Facebook</a>
-        <p>&nbsp</p>
-        <a class="waves-effect waves-light btn red accent-2 btnTamanho">
-          <i class="fa fa-google "></i>&nbsp&nbsp&nbspLogar com Gmail</a>
-        <p>&nbsp</p>
-        <p style="text-align: center">Ou</p>
-      </div>
-
-
-
-      <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="email" type="email" id="email" class="validate">
-              <label for="email">Email</label>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" id="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="password" type="password" id="password" class="validate">
+                <label for="password">Senha</label>
+              </div>
+              <div id="formDefaultButtons">
+                <button class="btn waves-effect waves-light grey darken-3 btnSubmit" type="button" id="login" name="login">Logar
+                  <i class="material-icons right">send</i>
+                </button>
+                <button class="btn waves-effect waves-light grey darken-3 btnSubmit" type="button" id="register" name="register">Cadastro
+                  <i class="material-icons right">person_add</i>
+                </button>
+              </div>
             </div>
-            <div class="input-field col s12">
-              <input id="password" type="password" id="password" class="validate">
-              <label for="password">Senha</label>
-            </div>
-            <div id="formDefaultButtons">
-              <button class="btn waves-effect waves-light grey darken-3 btnSubmit" type="button" id="login" name="login">Logar
-                <i class="material-icons right">send</i>
+
+
+
+
+
+            <!-- Formulário de cadastro -->
+            <div id="formCadastro" class="disableForm">
+              <div class="input-field col s12">
+                <input id="password-confirm" type="password" id="password-confirm" class="validate">
+                <label for="password-confirm">Confirmação de Senha</label>
+              </div>
+              <div class="input-field col s12">
+                <select id="objetivo">
+                  <option value="" disabled selected>Escolha uma opção</option>
+                  <option value="1">Eventos</option>
+                  <option value="2">Ensaios</option>
+                  <option value="3">Outros</option>
+                </select>
+                <label>Objetivo</label>
+              </div>
+              <button class="btn waves-effect waves-light grey darken-3 btnSubmit" type="button" id="voltar" name="register">Voltar
+                <i class="material-icons right">arrow_back</i>
               </button>
-              <button class="btn waves-effect waves-light grey darken-3 btnSubmit" type="button" id="register" name="register">Cadastro
-                <i class="material-icons right">person_add</i>
+              <button class="btn waves-effect waves-light grey darken-3 btnSubmit" type="button" id="btn-registrar" name="login" >Registrar
+                <i class="material-icons right">add</i>
               </button>
             </div>
-          </div>
-
-
-
-
-
-          <!-- Formulário de cadastro -->
-          <div id="formCadastro" class="disableForm">
-            <div class="input-field col s12">
-              <input id="password-confirm" type="password" id="password-confirm" class="validate">
-              <label for="password-confirm">Confirmação de Senha</label>
-            </div>
-            <div class="input-field col s12">
-              <select id="objetivo">
-                <option value="" disabled selected>Escolha uma opção</option>
-                <option value="1">Eventos</option>
-                <option value="2">Ensaios</option>
-                <option value="3">Outros</option>
-              </select>
-              <label>Objetivo</label>
-            </div>
-            <button class="btn waves-effect waves-light grey darken-3 btnSubmit" type="button" id="voltar" name="register">Voltar
-              <i class="material-icons right">arrow_back</i>
-            </button>
-            <button class="btn waves-effect waves-light grey darken-3 btnSubmit" type="button" id="btn-registrar" name="login">Registrar
-              <i class="material-icons right">add</i>
-            </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
-    </div>
-  </main>
-  <!-- Main -->
+    </main>
+    <!-- Main -->
+
+  </div>
 
   <!-- Rodapé -->
-  <footer class="white lighten-4 page-footer z-depth-1 ">
+  <footer class="white lighten-4 page-footer z-depth-1 footerLogin">
     <div>
       <div class="container ">
         <div class="row">
