@@ -122,6 +122,10 @@ img{
 	font-weight: lighter;
 }
 
+.footer-debug{
+	height: 400px;
+}
+
 .fontSliderBlack{
 	padding-left: 1%;
 	color: black;
