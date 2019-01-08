@@ -6,8 +6,27 @@
 	font-weight: normal;/*Peso ou intensidade da fonte normal*/
 	box-sizing: border-box;/*Tamanho da caixa agr nao conta com a borda*/
 	border: none;/*Sem borda*/
-	outline: none;/*Sem contorno*/
+	outline: none;/*Seheight: 200px;
+  width: 50%;m contorno*/
 }
+
+.my-gallery {
+	width: 100%;
+	float: left;
+  }
+  .my-gallery img {
+	width: 100%;
+	height: 100px;
+  }
+  .my-gallery figure {
+	display: block;
+	float: left;
+	margin: 0 5px 5px 0;
+	width: 150px;
+  }
+  .my-gallery figcaption {
+	display: none;
+  }
 
 img{
 	max-width: 100%;/*Imagens vai ter o tamanho real*/
@@ -101,6 +120,18 @@ img{
 	color: white;
 	text-shadow: black 0.1em 0.1em 0.9em;
 	font-weight: lighter;
+}
+
+.fontSliderBlack{
+	padding-left: 1%;
+	color: black;
+	text-shadow: gray 0.1em 0.1em 0.9em;
+	font-weight: lighter;
+}
+
+.thumbnail-custom{
+	height: 200px;
+	width: 20%;
 }
 
 .mainLogin{

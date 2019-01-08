@@ -1,84 +1,352 @@
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <meta name="keywords" content="Foto, Fotografia, Eventos, Fotógrafa, Fotógrafo, Fotos">
-      <meta name="author" content="Danilo Mendes">
-      <link type="text/css" rel="stylesheet" href="css/style.css"/>
-	  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100"> 
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Foto, Fotografia, Eventos, Fotógrafa, Fotógrafo, Fotos">
+  <meta name="author" content="Danilo Mendes">
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100">
+  <!-- Core CSS file -->
+  <link rel="stylesheet" href="css/photoswipe.css">
+  <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite, 
+     - preloader.gif (for browsers that do not support CSS animations) -->
+  <link rel="stylesheet" href="css/default-skin.css">
 
 
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-    <body>
-      <header class="cabecalho">
-        <nav class="white lighten-4">
-          <a href="../index.html"><span class="logo">ICONE</span></a>
-            <div class="nav-wrapper">
-              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="../index.html" class="hoverDan black-text text-darken-5 ">HOME</a></li>
-                <li class="active"><a href="portfolio.html" class="hoverDan black-text text-darken-5">PORTFÓLIO</a></li>
-                <li><a href="sobre.html" class="hoverDan black-text text-darken-5">SOBRE</a></li>
-                <li><a href="contato.html" class="hoverDan black-text text-darken-5">CONTATO</a></li>
-                <li><a href="login.html" class="hoverDan black-text text-darken-5 "><i class="fa fa-sign-in"></i></a></li>
-              </ul> 
-            </div>
-        </nav>
-      </header>
-      
-      <div >
-		<h2 class="fontSlider">Portfólio</h2>
+<body>
+  <header class="cabecalho">
+    <nav class="white lighten-4">
+      <a href="../index.html"><span class="logo">ICONE</span></a>
+      <div class="nav-wrapper">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="../index.html" class="hoverDan black-text text-darken-5 ">HOME</a></li>
+          <li class="active"><a href="portfolio.html" class="hoverDan black-text text-darken-5">PORTFÓLIO</a></li>
+          <li><a href="contato.html" class="hoverDan black-text text-darken-5">CONTATO</a></li>
+          <li><a href="login.html" class="hoverDan black-text text-darken-5 "><i class="fa fa-sign-in"></i></a></li>
+        </ul>
       </div>
-	  
-		<ul>
-		  <li><img src="img/1.jpg" alt="" border="0"></li>
-		  <li><img src="img/2.jpg" alt="" border="0"></li>
-		  <li><img src="img/3.jpg" alt="" border="0"></li>
-		  <li><img src="img/4.jpg" alt="" border="0"></li>
-		  <li><img src="img/5.jpg" alt="" border="0"></li>
-		  <li><img src="img/6.jpg" alt="" border="0"></li>
-	   </ul>
-      
-      <footer class="white lighten-4 page-footer z-depth-1 ">
-        <div>
-          <div class="container ">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="black-text">Fale comigo!</h5>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <ul>
-                  <li><a class="black-text text-lighten-5" href="#!">&nbsp</a></li>
-                  <li><a class="black-text text-lighten-5" href="https://www.instagram.com/balves._/">Siga-me no Instagram&nbsp<i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
-                  <li><span class="black-text text-lighten-5" >TEL: (11)96805-3478&nbsp<i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></span></li>
-                </ul>
+    </nav>
+  </header>
+
+  <main class="mainDan z-depth-1 ">
+    <h2 class="fontSliderBlack">Portfólio</h2>
+
+    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/33.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img class="thumbnail-custom" src="img/33.jpeg" itemprop="thumbnail" alt="Image description" />
+        </a>
+
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/32.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/32.jpeg" itemprop="thumbnail" alt="Image description" data-size="250x250" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/31.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/31.jpeg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/30.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/30.jpeg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/29.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/29.jpeg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/28.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/28.jpeg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/27.jpeg" itemprop="contentUrl" data-size="640x960">
+          <img src="img/27.jpeg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/26.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/26.jpeg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/25.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/25.jpeg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/24.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/24.jpeg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/23.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/23.jpeg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/22.jpeg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/22.jpeg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/21.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/21.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/20.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/20.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/18.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/18.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/16.jpg" itemprop="contentUrl" data-size="750x750">
+          <img src="img/16.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/15.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/15.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/14.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/14.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/13.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/13.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/12.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/12.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/11.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/11.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/10.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/10.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/9.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/9.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/8.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/8.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/7.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/7.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/6.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/6.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/5.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/5.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/4.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/4.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/3.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/3.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/2.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/2.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/1.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/1.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+
+      </figure>
+    </div>
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+      <!-- Background of PhotoSwipe. 
+         It's a separate element, as animating opacity is faster than rgba(). -->
+      <div class="pswp__bg"></div>
+
+      <!-- Slides wrapper with overflow:hidden. -->
+      <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+          <div class="pswp__top-bar">
+
+            <!--  Controls are self-explanatory. Order can be changed. -->
+
+            <div class="pswp__counter"></div>
+
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+            <button class="pswp__button pswp__button--share" title="Share"></button>
+
+            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+            <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+            <!-- element will get class pswp__preloader--active when preloader is running -->
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
               </div>
             </div>
-           </div>
           </div>
-          <div class="footer-copyright" >
-            <div class="container black-text text-lighten-5 ">
-            © 2017 Copyright Bárbaralves
-            <a class="black-text text-lighten-5 right" href="#!">Made by Danepic</a>
-            </div>
+
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div>
           </div>
-        </footer>
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <!--Scripts-->
-      <script type="text/javascript">
-        $('.carousel.carousel-slider').carousel({fullWidth: true});
-      </script>
-    </body>
-  </html>
-  
-  
+
+          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+          </button>
+
+          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+          </button>
+
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!--<ul>
+    <li><img src="img/1.jpg" alt="" border="0"></li>
+    <li><img src="img/2.jpg" alt="" border="0"></li>
+    <li><img src="img/3.jpg" alt="" border="0"></li>
+    <li><img src="img/4.jpg" alt="" border="0"></li>
+    <li><img src="img/5.jpg" alt="" border="0"></li>
+    <li><img src="img/6.jpg" alt="" border="0"></li>
+  </ul>-->
+
+  <footer class="white lighten-4 page-footer z-depth-1 ">
+    <div>
+      <div class="container ">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="black-text">Fale comigo!</h5>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <ul>
+              <li><a class="black-text text-lighten-5" href="#!">&nbsp</a></li>
+              <li><a class="black-text text-lighten-5" href="https://www.instagram.com/balves._/">Siga-me no Instagram&nbsp<i
+                    class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
+              <li><span class="black-text text-lighten-5">TEL: (11)96805-3478&nbsp<i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container black-text text-lighten-5 ">
+        © 2017 Copyright Bárbaralves
+        <a class="black-text text-lighten-5 right" href="#!">Made by Danepic</a>
+      </div>
+    </div>
+  </footer>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!-- Core JS file -->
+  <script src="js/photoswipe.min.js"></script>
+  <!-- UI JS file -->
+  <script src="js/photoswipe-ui-default.min.js"></script>
+  <script type="text/javascript" src="js/album.js"></script>
+</body>
+
+</html>
