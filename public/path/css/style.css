@@ -54,22 +54,27 @@ img{
 
 .slider1{
 	background: url(../img/slider1.jpg) center center/1365px no-repeat;
+    background-size: 100% auto;
 }
 
 .slider2{
 	background: url(../img/slider2.jpg) center center/1365px no-repeat;
+    background-size: 100% auto;
 }
 
 .slider3{
 	background: url(../img/slider3.jpg) center center/1365px no-repeat;
+    background-size: 100% auto;
 }
 
 .slider4{
 	background: url(../img/slider4.jpg) center center/1365px no-repeat;
+    background-size: 100% auto;
 }
 
 .slider5{
 	background: url(../img/slider5.jpg) center center/1365px no-repeat;
+    background-size: 100% auto;
 }
 
 .mainDan{
